@@ -7,7 +7,7 @@ for (int j=0,j<i-k;j++)
 swap(queue.el(j),queue.el(k-j))
 }
 
-int f(queue.el(a),queue.el(b))
+int f(A.at(a),A.at(b))
 {
 if ((G[a][b]==0)&(G[b][a]==0))
 return 0;
@@ -27,20 +27,20 @@ printf(“G[i][j] = “);
 scanf(“%d”,&G[i][j]);
 }
 }
-queue A; //очередь вершин//
+queue <int>A; //очередь вершин//
 //заполнить список вершин//
 
 int k=n-1;
 while(k)
 {
-if (f(queue.el(0),queue.el(1))!=0) //проверка есть ли ребро между 0 и 1 вершиной//
+if (f(A.at(0),A.at(1))!=0) //проверка есть ли ребро между 0 и 1 вершиной//
 
-while((f(queue.el(0),queue.el(i))!=0)&&(f(queue.el(1),queue.el(i+1))!=0))
+while((f(A.at(0),A.at(i))!=0)&&(f(A.at(1),A.at(i+1))!=0))
 i++;
 
-swap_string(queue A,1,i); //переворачиваем перестановку от 1 до i//
-queue.push_back(queue.top()); //добавление в конец первой вершины//
-queue.pop(); //удаление вершины//
+swap_string(A,1,i); //переворачиваем перестановку от 1 до i//
+queue.push_back(A.top()); //добавление в конец первой вершины//
+A.pop(); //удаление вершины//
 k—;
 }
 } 
