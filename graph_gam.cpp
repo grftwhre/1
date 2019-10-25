@@ -9,9 +9,9 @@ swap(queue.el(j),queue.el(k-j))
 
 int f(queue.el(a),queue.el(b))
 {
-if ((G[a][b]==0)&(G[a][b]==0))
+if ((G[a][b]==0)&(G[b][a]==0))
 return 0;
-if ((G[a][b]!=0)&(G[a][b]!=0))
+if ((G[a][b]!=0)&(G[b][a]!=0))
 return 1;
 }
 int main() {
